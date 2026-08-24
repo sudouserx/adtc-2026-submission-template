@@ -1,18 +1,18 @@
 {
-  "team_id": "your-team-id",
-  "domain": "coding_assistants",
-  "language_scope": ["en"],
-  "african_alpha_claim": false,
+  "team_id": "kuza-ai",
+  "domain": "agriculture",
+  "language_scope": ["en", "sw"],
+  "african_alpha_claim": true,
   "budget_laptop_claim": true,
   "submitter": {
-    "name": "your-name",
-    "email": "your-email@domain.com",
-    "github_handle": "your-github"
+    "name": "Ebrahim Aliyou Wudu",
+    "email": "ebrahimaliyou@gmail.com",
+    "github_handle": "sudouserx"
   },
   "cross_disciplinary_pairing": {
-    "discipline": "education",
+    "discipline": "agriculture",
     "load_bearing": true,
-    "description": "Brief description of how your model serves a real-world domain."
+    "description": "Offline agricultural AI assistant for East African farmers and extension workers, providing farm-level guidance in English and Swahili without cloud inference."
   },
   "provenance": {
     "base_model_source": "huggingface:HuggingFaceTB/SmolLM2-135M-Instruct",
@@ -23,21 +23,21 @@
   "test_prompts": [
     {
       "prompt_id": "tp_001",
-      "prompt": "Write a Python function that reads a CSV file and returns the column with the highest mean value."
+      "prompt": "How do I take care of my calf for the first week to prevent mortality?"
     },
     {
       "prompt_id": "tp_002",
-      "prompt": "Explain the difference between a list and a tuple in Python, and give one example where each is the better choice."
+      "prompt": "Nipasheje umbali wa kupanda ndizi?"
     }
   ],
   "model": {
-    "name": "SmolLM2-135M-Instruct-Q4_K_M",
+    "name": "kuza-eng-sw-q4_k_m-imatrix-q6emb",
     "runtime": "llama.cpp",
     "quantization": "GGUF Q4_K_M",
-    "parameters_estimate": "135M",
+    "parameters_estimate": "5B",
     "packaging": "binary_bundle"
   },
   "_runtime": {
-    "model_path": "model/SmolLM2-135M-Instruct-Q4_K_M.gguf"
+    "model_path": "model/kuza-eng-sw-q4_k_m-imatrix-q6emb.gguf"
   }
 }
