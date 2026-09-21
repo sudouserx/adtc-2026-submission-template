@@ -82,3 +82,21 @@ Use `git add -f` only if a local ignore rule still matches during transition.
    Expect HTTP **200** (not 404).
 
 If GitHub LFS is unavailable, reviewers can use the Hugging Face URLs above and verify checksums.
+
+## GitHub fork limitation (important)
+
+This repository is a **public fork** of the ADTC template. GitHub often **blocks uploading new Git LFS objects** to public forks (`can not upload new objects to public fork`). In that case:
+
+- The repo may contain **LFS pointer files** on `main` (small text files starting with `version https://git-lfs.github.com/spec/v1`).
+- **`media.githubusercontent.com` returns 404** until LFS objects are uploaded from a non-fork repo or an account with LFS quota on forks.
+- **`git lfs pull` after clone will fail** until objects exist on GitHub LFS.
+
+**For Gate 2 review:** use the **Hugging Face URLs** in the table above (same bytes and SHA256 as local proof). To host LFS on GitHub long term, use a **standalone repository** (not a fork), transfer the submission to an org with LFS enabled, or attach adapters only via HF and keep GitHub to configs/scripts.
+
+If LFS upload is blocked, push documentation-only updates with:
+
+```bash
+GIT_LFS_SKIP_PUSH=1 git push origin main
+```
+
+Then rely on Hugging Face for the ~184 MB adapter binaries.
