@@ -3,6 +3,7 @@ model/
 model/*.gguf
 model/*.bin
 model/*.safetensors
+!provenance/**/adapter_model.safetensors
 
 # macOS
 .DS_Store
@@ -18,6 +19,3 @@ audit.json
 
 # Local reference (not part of submission)
 Gate 2 (Semifinalist Round) Submission Guidelines.pdf
-
-provenance/adapter-dpo/adapter_model.safetensors
-provenance/adapter-sft/adapter_model.safetensors

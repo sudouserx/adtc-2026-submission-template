@@ -9,6 +9,7 @@
 79e604f9a3bf191c6350ed053d36d29be6aef46d9cf3ce4aa8c4bce25eb3c3b5  model/kuza-ud-q4_k_xl.gguf
 
 # LoRA adapters (computed from files in this repo; re-run: sha256sum provenance/**/adapter_model.safetensors)
+# If GitHub LFS objects are missing, verify downloads via HF URLs in ADAPTER_WEIGHTS_AND_LFS.md
 b7f47b3ea368e7bd0ff6cad3f31e7147b144042c028f8e57b1cf6a330ff00747  provenance/adapter-dpo/adapter_model.safetensors
 
 feafdea580dde231950fc625a8ebe5cd3010c3577e4737675c26ca2e1afe6f4d  provenance/adapter-sft/adapter_model.safetensors
