@@ -1,0 +1,57 @@
+{
+  "architecture": "[103 101 109 109  97  52]",
+  "base_type": "q4_k_m",
+  "filename": "kuza-ud-q4_k_xl.gguf",
+  "imatrix_sha256": "118e886c4286d5c32d1f8612f36e76cd849ada37a7ed23cc39d4f0b7735a4a82",
+  "name": "ud_q4_k_xl",
+  "overrides": [
+    [
+      "--token-embedding-type",
+      "q5_k"
+    ],
+    [
+      "--output-tensor-type",
+      "q5_k"
+    ],
+    [
+      "--tensor-type",
+      "per_layer_token_embd\\.weight=q4_k"
+    ],
+    [
+      "--tensor-type",
+      "per_layer_model_proj\\.weight=q5_k"
+    ],
+    [
+      "--tensor-type",
+      "blk\\..*\\.attn_(q|k|v|output|qkv)\\.weight=q5_k"
+    ],
+    [
+      "tensor_bulk_q4_k",
+      "ffn_gate"
+    ],
+    [
+      "tensor_bulk_q4_k",
+      "ffn_up"
+    ],
+    [
+      "tensor_bulk_q4_k",
+      "ffn_down"
+    ]
+  ],
+  "pure": false,
+  "role": "candidate",
+  "sha256": "79e604f9a3bf191c6350ed053d36d29be6aef46d9cf3ce4aa8c4bce25eb3c3b5",
+  "size": 2725270560,
+  "source": "reference",
+  "source_sha256": "55cb84f3fedac45009ef81d20f5f464d0b480c1f5dc2dd08757e66dffd598234",
+  "tensor_type_counts": {
+    "BF16": 1,
+    "F32": 263,
+    "Q4_K": 176,
+    "Q5_K": 101
+  },
+  "use_imatrix": true,
+  "warnings": [
+    "263 F32 tensors kept (norms/PLE artifacts) — recorded, expected"
+  ]
+}

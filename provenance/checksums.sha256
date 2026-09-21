@@ -1,0 +1,17 @@
+# SHA256 checksums for Gate 2 provenance (verify after download where noted)
+# Base model: Hugging Face revision snapshot (full weight tree not stored in this repo)
+13139d07f4cc4b6a2585ea6ab9fde6063281ae14  base_model_revision_unsloth_gemma-4-E2B-it-qat-q4_0-unquantized
+
+# Merged BF16 reference (pre-quantization), from ud_q4_k_xl_recipe.json source_sha256
+55cb84f3fedac45009ef81d20f5f464d0b480c1f5dc2dd08757e66dffd598234  merged_reference_bf16
+
+# Final submitted GGUF (pin matches download_model.sh HF commit ed650f8fc212de1bb4e4d2684b32809a7fb59b32)
+79e604f9a3bf191c6350ed053d36d29be6aef46d9cf3ce4aa8c4bce25eb3c3b5  model/kuza-ud-q4_k_xl.gguf
+
+# LoRA adapters (computed from files in this repo; re-run: sha256sum provenance/**/adapter_model.safetensors)
+b7f47b3ea368e7bd0ff6cad3f31e7147b144042c028f8e57b1cf6a330ff00747  provenance/adapter-dpo/adapter_model.safetensors
+
+feafdea580dde231950fc625a8ebe5cd3010c3577e4737675c26ca2e1afe6f4d  provenance/adapter-sft/adapter_model.safetensors
+
+# Importance matrix used for mixed-precision quant
+118e886c4286d5c32d1f8612f36e76cd849ada37a7ed23cc39d4f0b7735a4a82  imatrix.dat

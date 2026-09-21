@@ -15,10 +15,16 @@
     "description": "Offline agricultural AI assistant for East African farmers and extension workers, providing farm-level guidance in English and Swahili without cloud inference."
   },
   "provenance": {
-    "base_model_source": "huggingface:HuggingFaceTB/SmolLM2-135M-Instruct",
-    "base_model_commit_sha": "3b3e0a7f0c9e8b1a2d4c5f6e7d8c9b0a1f2e3d4c",
-    "fine_tuning_method": "none",
-    "training_datasets": []
+    "base_model_source": "huggingface:unsloth/gemma-4-E2B-it-qat-q4_0-unquantized",
+    "base_model_commit_sha": "13139d07f4cc4b6a2585ea6ab9fde6063281ae14",
+    "fine_tuning_method": "qlora",
+    "training_datasets": [
+      "https://huggingface.co/datasets/kuzaai/kuza_sft_english",
+      "https://huggingface.co/datasets/kuzaai/kuza_sft_swahili",
+      "https://huggingface.co/datasets/kuzaai/kuza_sft_multiturn",
+      "https://huggingface.co/datasets/kuzaai/kuza_sft_adversarial",
+      "https://huggingface.co/datasets/kuzaai/kuza_dpo_preference"
+    ]
   },
   "test_prompts": [
     {
@@ -31,13 +37,13 @@
     }
   ],
   "model": {
-    "name": "kuza-eng-sw-q4_k_m-imatrix-q6emb",
+    "name": "kuza-ud-q4_k_xl",
     "runtime": "llama.cpp",
     "quantization": "GGUF Q4_K_M",
-    "parameters_estimate": "5B",
+    "parameters_estimate": "4.6B",
     "packaging": "binary_bundle"
   },
   "_runtime": {
-    "model_path": "model/kuza-eng-sw-q4_k_m-imatrix-q6emb.gguf"
+    "model_path": "model/kuza-ud-q4_k_xl.gguf"
   }
 }

@@ -1,0 +1,80 @@
+{
+  "base_model": "unsloth/gemma-4-E2B-it-qat-q4_0-unquantized",
+  "base_revision": "13139d07f4cc4b6a2585ea6ab9fde6063281ae14",
+  "dataset": {
+    "origin": "hub",
+    "repo": "kuzaai/kuza_dpo_preference",
+    "rows": 1224,
+    "validation_split": "validation"
+  },
+  "eval_pairs": 97,
+  "hyperparameter_routing": {
+    "beta": {
+      "actual": 0.1,
+      "applied_via": "config_named",
+      "intended": 0.1
+    },
+    "loss_type": {
+      "actual": "sigmoid",
+      "applied_via": "config_field",
+      "intended": "sigmoid"
+    },
+    "max_completion_length": {
+      "actual": 384,
+      "applied_via": "config_named",
+      "intended": 384
+    },
+    "max_length": {
+      "actual": 2048,
+      "applied_via": "config_named",
+      "intended": 2048
+    },
+    "max_prompt_length": {
+      "actual": 640,
+      "applied_via": "config_named",
+      "intended": 640
+    },
+    "rpo_alpha": {
+      "actual": 1.0,
+      "applied_via": "config_named",
+      "intended": 1.0
+    },
+    "truncation_mode": {
+      "actual": "keep_start",
+      "applied_via": "config_named",
+      "intended": "keep_start"
+    }
+  },
+  "hyperparameters": {
+    "beta": 0.1,
+    "learning_rate": 5e-06,
+    "loss_type": "sigmoid",
+    "max_completion_length": 384,
+    "max_length": 2048,
+    "max_prompt_length": 640,
+    "num_train_epochs": 1.0,
+    "rpo_alpha": 1.0,
+    "truncation_mode": "keep_start"
+  },
+  "kv_sharing_patch": {
+    "patched": 35,
+    "stripped": 80
+  },
+  "processing": {
+    "is_vlm_model": true,
+    "model_type": "gemma4",
+    "model_type_patched_during_init": true,
+    "route": "processing_class_tokenizer_text_patch",
+    "shim_used": false,
+    "text_config_model_type": "gemma4_text",
+    "tokenization_check": {
+      "column": "prompt_input_ids",
+      "prompt_tokens": 168,
+      "status": "ok"
+    },
+    "tokenizer_class": "GemmaTokenizer"
+  },
+  "sft_adapter": "/workspace/kuza-pipeline/kuza-gemma-4-e2b/adapter-sft",
+  "system_prompt_sha256": "cd52dc18e8d2c0df5de6f13cd7dd62ce36f6c4b9cff3ff3f109446da85d8ebce",
+  "train_pairs": 866
+}

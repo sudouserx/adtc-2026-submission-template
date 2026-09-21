@@ -18,8 +18,8 @@ MODEL_DIR="$HERE/model"
 # ⚠️ Edit ONLY the two values below (MODEL_FILE, MODEL_URL). Do not change
 # anything else in this file — see "download_model.sh" in README.md for what
 # the evaluator requires.
-MODEL_FILE="$MODEL_DIR/[YOUR_MODEL_FILE_NAME].gguf"
-MODEL_URL="[YOUR_MODEL_URL]"
+MODEL_FILE="$MODEL_DIR/kuza-ud-q4_k_xl.gguf"
+MODEL_URL="https://huggingface.co/kuzaai/kuza-gemma-4-e2b/resolve/ed650f8fc212de1bb4e4d2684b32809a7fb59b32/quants/ud_q4_k_xl/kuza-ud-q4_k_xl.gguf"
 
 mkdir -p "$MODEL_DIR"
 

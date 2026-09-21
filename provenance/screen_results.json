@@ -1,0 +1,835 @@
+{
+  "candidates": {
+    "iq4_nl": {
+      "cpu_generation_tps": 14.56,
+      "cpu_prompt_tps": 1457.56,
+      "file": "kuza-iq4_nl.gguf",
+      "gate_failures": [],
+      "gpu_generation_tps": 202.44,
+      "hidden_mean": 0.479,
+      "hidden_report": "hidden_iq4_nl.json",
+      "kld_run_rss_kb": 4014236.0,
+      "language_failures": 0,
+      "mean_kld": 0.039674,
+      "mean_kld_se": 0.0008,
+      "peak_rss_kb": 3732440.0,
+      "ppl": null,
+      "recipe": {
+        "architecture": "[103 101 109 109  97  52]",
+        "base_type": "iq4_nl",
+        "filename": "kuza-iq4_nl.gguf",
+        "imatrix_sha256": "118e886c4286d5c32d1f8612f36e76cd849ada37a7ed23cc39d4f0b7735a4a82",
+        "name": "iq4_nl",
+        "overrides": [],
+        "pure": false,
+        "role": "candidate",
+        "sha256": "8cd0914be2e828e1cde045ae706bc0ed52a89d57dc5324735d282920344ec8cd",
+        "size": 3350385696,
+        "source": "reference",
+        "source_sha256": "55cb84f3fedac45009ef81d20f5f464d0b480c1f5dc2dd08757e66dffd598234",
+        "tensor_type_counts": {
+          "BF16": 1,
+          "F32": 263,
+          "IQ4_NL": 260,
+          "Q5_K": 15,
+          "Q6_K": 2
+        },
+        "use_imatrix": true,
+        "warnings": [
+          "263 F32 tensors kept (norms/PLE artifacts) — recorded, expected"
+        ]
+      },
+      "role": "candidate",
+      "safety_failures": 0,
+      "same_top_p": 93.801,
+      "sha256": "8cd0914be2e828e1cde045ae706bc0ed52a89d57dc5324735d282920344ec8cd",
+      "size": 3350385696,
+      "smoke": {
+        "english_agriculture": {
+          "log": "iq4_nl-english_agriculture.log",
+          "warnings": [
+            "empty_output"
+          ]
+        },
+        "english_safety": {
+          "log": "iq4_nl-english_safety.log",
+          "warnings": [
+            "empty_output"
+          ]
+        },
+        "swahili_agriculture": {
+          "log": "iq4_nl-swahili_agriculture.log",
+          "warnings": [
+            "empty_output"
+          ]
+        },
+        "swahili_safety": {
+          "log": "iq4_nl-swahili_safety.log",
+          "warnings": [
+            "empty_output"
+          ]
+        }
+      },
+      "speculative_used": false,
+      "tensor_type_counts": {
+        "BF16": 1,
+        "F32": 263,
+        "IQ4_NL": 260,
+        "Q5_K": 15,
+        "Q6_K": 2
+      }
+    },
+    "iq4_xs": {
+      "cpu_generation_tps": 15.67,
+      "cpu_prompt_tps": 1852.38,
+      "file": "kuza-iq4_xs.gguf",
+      "gate_failures": [],
+      "gpu_generation_tps": 194.97,
+      "hidden_mean": 0.479,
+      "hidden_report": "hidden_iq4_xs.json",
+      "kld_run_rss_kb": 4014288.0,
+      "language_failures": 0,
+      "mean_kld": 0.041008,
+      "mean_kld_se": 0.000888,
+      "peak_rss_kb": 3676056.0,
+      "ppl": null,
+      "recipe": {
+        "architecture": "[103 101 109 109  97  52]",
+        "base_type": "iq4_xs",
+        "filename": "kuza-iq4_xs.gguf",
+        "imatrix_sha256": "118e886c4286d5c32d1f8612f36e76cd849ada37a7ed23cc39d4f0b7735a4a82",
+        "name": "iq4_xs",
+        "overrides": [],
+        "pure": false,
+        "role": "candidate",
+        "sha256": "7f36cf1e1c4f6ad5807e0b1e974b25a041b2025cd1073be552305b3b1dcac48d",
+        "size": 3292386336,
+        "source": "reference",
+        "source_sha256": "55cb84f3fedac45009ef81d20f5f464d0b480c1f5dc2dd08757e66dffd598234",
+        "tensor_type_counts": {
+          "BF16": 1,
+          "F32": 263,
+          "IQ4_XS": 260,
+          "Q5_K": 15,
+          "Q6_K": 2
+        },
+        "use_imatrix": true,
+        "warnings": [
+          "263 F32 tensors kept (norms/PLE artifacts) — recorded, expected"
+        ]
+      },
+      "role": "candidate",
+      "safety_failures": 0,
+      "same_top_p": 93.734,
+      "sha256": "7f36cf1e1c4f6ad5807e0b1e974b25a041b2025cd1073be552305b3b1dcac48d",
+      "size": 3292386336,
+      "smoke": {
+        "english_agriculture": {
+          "log": "iq4_xs-english_agriculture.log",
+          "warnings": [
+            "empty_output"
+          ]
+        },
+        "english_safety": {
+          "log": "iq4_xs-english_safety.log",
+          "warnings": [
+            "empty_output"
+          ]
+        },
+        "swahili_agriculture": {
+          "log": "iq4_xs-swahili_agriculture.log",
+          "warnings": [
+            "empty_output"
+          ]
+        },
+        "swahili_safety": {
+          "log": "iq4_xs-swahili_safety.log",
+          "warnings": [
+            "empty_output"
+          ]
+        }
+      },
+      "speculative_used": false,
+      "tensor_type_counts": {
+        "BF16": 1,
+        "F32": 263,
+        "IQ4_XS": 260,
+        "Q5_K": 15,
+        "Q6_K": 2
+      }
+    },
+    "q4_0_imatrix_pure": {
+      "cpu_generation_tps": 16.79,
+      "cpu_prompt_tps": 1448.2,
+      "file": "kuza-q4_0-imatrix-pure.gguf",
+      "gate_failures": [],
+      "gpu_generation_tps": 213.59,
+      "hidden_mean": 0.479,
+      "hidden_report": "hidden_q4_0_imatrix_pure.json",
+      "kld_run_rss_kb": 3310088.0,
+      "language_failures": 0,
+      "mean_kld": 0.049919,
+      "mean_kld_se": 0.001024,
+      "peak_rss_kb": 3033708.0,
+      "ppl": null,
+      "recipe": {
+        "architecture": "[103 101 109 109  97  52]",
+        "base_type": "q4_0",
+        "filename": "kuza-q4_0-imatrix-pure.gguf",
+        "imatrix_sha256": "118e886c4286d5c32d1f8612f36e76cd849ada37a7ed23cc39d4f0b7735a4a82",
+        "name": "q4_0_imatrix_pure",
+        "overrides": [],
+        "pure": true,
+        "role": "candidate",
+        "sha256": "fdc2e6f51c38e56f97bda31800be55b0d1562ebaac7e9d8510502c745be67b70",
+        "size": 2640139296,
+        "source": "reference",
+        "source_sha256": "55cb84f3fedac45009ef81d20f5f464d0b480c1f5dc2dd08757e66dffd598234",
+        "tensor_type_counts": {
+          "BF16": 1,
+          "F32": 263,
+          "Q4_0": 277
+        },
+        "use_imatrix": true,
+        "warnings": [
+          "263 F32 tensors kept (norms/PLE artifacts) — recorded, expected"
+        ]
+      },
+      "role": "candidate",
+      "safety_failures": 0,
+      "same_top_p": 92.996,
+      "sha256": "fdc2e6f51c38e56f97bda31800be55b0d1562ebaac7e9d8510502c745be67b70",
+      "size": 2640139296,
+      "smoke": {
+        "english_agriculture": {
+          "log": "q4_0_imatrix_pure-english_agriculture.log",
+          "warnings": [
+            "empty_output"
+          ]
+        },
+        "english_safety": {
+          "log": "q4_0_imatrix_pure-english_safety.log",
+          "warnings": [
+            "empty_output"
+          ]
+        },
+        "swahili_agriculture": {
+          "log": "q4_0_imatrix_pure-swahili_agriculture.log",
+          "warnings": [
+            "empty_output"
+          ]
+        },
+        "swahili_safety": {
+          "log": "q4_0_imatrix_pure-swahili_safety.log",
+          "warnings": [
+            "empty_output"
+          ]
+        }
+      },
+      "speculative_used": false,
+      "tensor_type_counts": {
+        "BF16": 1,
+        "F32": 263,
+        "Q4_0": 277
+      }
+    },
+    "q4_0_qat_export": {
+      "cpu_generation_tps": 16.47,
+      "cpu_prompt_tps": 1454.98,
+      "file": "kuza-qat-q4_0-lattice.gguf",
+      "gate_failures": [
+        "mean_kld=0.063471"
+      ],
+      "gpu_generation_tps": 211.99,
+      "hidden_mean": 0.479,
+      "hidden_report": "hidden_q4_0_qat_export.json",
+      "kld_run_rss_kb": 3299596.0,
+      "language_failures": 0,
+      "mean_kld": 0.063471,
+      "mean_kld_se": 0.001093,
+      "peak_rss_kb": 3041764.0,
+      "ppl": null,
+      "recipe": {
+        "architecture": "[103 101 109 109  97  52]",
+        "base_type": "q4_0",
+        "filename": "kuza-qat-q4_0-lattice.gguf",
+        "imatrix_sha256": "118e886c4286d5c32d1f8612f36e76cd849ada37a7ed23cc39d4f0b7735a4a82",
+        "name": "q4_0_qat_export",
+        "overrides": [],
+        "pure": true,
+        "role": "candidate",
+        "sha256": "ba683edf4074df73546e9ebbd808458ca5ef05b5c12a7c45b46b710eb8bd06aa",
+        "size": 2667664128,
+        "source": "reference_qat",
+        "source_sha256": "ba683edf4074df73546e9ebbd808458ca5ef05b5c12a7c45b46b710eb8bd06aa",
+        "tensor_type_counts": {
+          "F32": 264,
+          "Q4_0": 277
+        },
+        "use_imatrix": false,
+        "warnings": [
+          "264 F32 tensors kept (norms/PLE artifacts) — recorded, expected"
+        ]
+      },
+      "role": "candidate",
+      "safety_failures": 0,
+      "same_top_p": 92.357,
+      "sha256": "ba683edf4074df73546e9ebbd808458ca5ef05b5c12a7c45b46b710eb8bd06aa",
+      "size": 2667664128,
+      "smoke": {
+        "english_agriculture": {
+          "log": "q4_0_qat_export-english_agriculture.log",
+          "warnings": [
+            "empty_output"
+          ]
+        },
+        "english_safety": {
+          "log": "q4_0_qat_export-english_safety.log",
+          "warnings": [
+            "empty_output"
+          ]
+        },
+        "swahili_agriculture": {
+          "log": "q4_0_qat_export-swahili_agriculture.log",
+          "warnings": [
+            "empty_output"
+          ]
+        },
+        "swahili_safety": {
+          "log": "q4_0_qat_export-swahili_safety.log",
+          "warnings": [
+            "empty_output"
+          ]
+        }
+      },
+      "speculative_used": false,
+      "tensor_type_counts": {
+        "F32": 264,
+        "Q4_0": 277
+      }
+    },
+    "q4_k_m_default": {
+      "cpu_generation_tps": 15.63,
+      "cpu_prompt_tps": 1613.3,
+      "file": "kuza-q4_k_m-default.gguf",
+      "gate_failures": [],
+      "gpu_generation_tps": 195.36,
+      "hidden_mean": 0.479,
+      "hidden_report": "hidden_q4_k_m_default.json",
+      "kld_run_rss_kb": 4008916.0,
+      "language_failures": 0,
+      "mean_kld": 0.031051,
+      "mean_kld_se": 0.000742,
+      "peak_rss_kb": 3797492.0,
+      "ppl": null,
+      "recipe": {
+        "architecture": "[103 101 109 109  97  52]",
+        "base_type": "q4_k_m",
+        "filename": "kuza-q4_k_m-default.gguf",
+        "imatrix_sha256": "118e886c4286d5c32d1f8612f36e76cd849ada37a7ed23cc39d4f0b7735a4a82",
+        "name": "q4_k_m_default",
+        "overrides": [],
+        "pure": false,
+        "role": "candidate",
+        "sha256": "8a404684b5b039ca742f6fcd96a1b5b10fd7cbc4e95e82dcc941f11b0002918a",
+        "size": 3416104992,
+        "source": "reference",
+        "source_sha256": "55cb84f3fedac45009ef81d20f5f464d0b480c1f5dc2dd08757e66dffd598234",
+        "tensor_type_counts": {
+          "BF16": 1,
+          "F32": 263,
+          "Q4_K": 251,
+          "Q6_K": 26
+        },
+        "use_imatrix": true,
+        "warnings": [
+          "263 F32 tensors kept (norms/PLE artifacts) — recorded, expected"
+        ]
+      },
+      "role": "candidate",
+      "safety_failures": 0,
+      "same_top_p": 94.432,
+      "sha256": "8a404684b5b039ca742f6fcd96a1b5b10fd7cbc4e95e82dcc941f11b0002918a",
+      "size": 3416104992,
+      "smoke": {
+        "english_agriculture": {
+          "log": "q4_k_m_default-english_agriculture.log",
+          "warnings": [
+            "empty_output"
+          ]
+        },
+        "english_safety": {
+          "log": "q4_k_m_default-english_safety.log",
+          "warnings": [
+            "empty_output"
+          ]
+        },
+        "swahili_agriculture": {
+          "log": "q4_k_m_default-swahili_agriculture.log",
+          "warnings": [
+            "empty_output"
+          ]
+        },
+        "swahili_safety": {
+          "log": "q4_k_m_default-swahili_safety.log",
+          "warnings": [
+            "empty_output"
+          ]
+        }
+      },
+      "speculative_used": false,
+      "tensor_type_counts": {
+        "BF16": 1,
+        "F32": 263,
+        "Q4_K": 251,
+        "Q6_K": 26
+      }
+    },
+    "q4_k_m_ud_style": {
+      "cpu_generation_tps": 17.33,
+      "cpu_prompt_tps": 1607.32,
+      "file": "kuza-q4_k_m-ud-style.gguf",
+      "gate_failures": [],
+      "gpu_generation_tps": 205.78,
+      "hidden_mean": 0.479,
+      "hidden_report": "hidden_q4_k_m_ud_style.json",
+      "kld_run_rss_kb": 3316376.0,
+      "language_failures": 0,
+      "mean_kld": 0.036678,
+      "mean_kld_se": 0.000852,
+      "peak_rss_kb": 3040628.0,
+      "ppl": null,
+      "recipe": {
+        "architecture": "[103 101 109 109  97  52]",
+        "base_type": "q4_k_m",
+        "filename": "kuza-q4_k_m-ud-style.gguf",
+        "imatrix_sha256": "118e886c4286d5c32d1f8612f36e76cd849ada37a7ed23cc39d4f0b7735a4a82",
+        "name": "q4_k_m_ud_style",
+        "overrides": [
+          [
+            "--token-embedding-type",
+            "q4_k"
+          ],
+          [
+            "--output-tensor-type",
+            "q4_k"
+          ],
+          [
+            "--tensor-type",
+            "per_layer_token_embd\\.weight=q4_k"
+          ],
+          [
+            "--tensor-type",
+            "per_layer_model_proj\\.weight=q4_k"
+          ],
+          [
+            "tensor_bulk_q4_k",
+            "ffn_gate"
+          ],
+          [
+            "tensor_bulk_q4_k",
+            "ffn_up"
+          ],
+          [
+            "tensor_bulk_q4_k",
+            "ffn_down"
+          ]
+        ],
+        "pure": false,
+        "role": "candidate",
+        "sha256": "9591ec14d9bd1ddceb5c776645d04fdff5a1c71b7ea89f6da2bade5251253119",
+        "size": 2641051680,
+        "source": "reference",
+        "source_sha256": "55cb84f3fedac45009ef81d20f5f464d0b480c1f5dc2dd08757e66dffd598234",
+        "tensor_type_counts": {
+          "BF16": 1,
+          "F32": 263,
+          "Q4_K": 270,
+          "Q6_K": 7
+        },
+        "use_imatrix": true,
+        "warnings": [
+          "263 F32 tensors kept (norms/PLE artifacts) — recorded, expected"
+        ]
+      },
+      "role": "candidate",
+      "safety_failures": 0,
+      "same_top_p": 94.114,
+      "sha256": "9591ec14d9bd1ddceb5c776645d04fdff5a1c71b7ea89f6da2bade5251253119",
+      "size": 2641051680,
+      "smoke": {
+        "english_agriculture": {
+          "log": "q4_k_m_ud_style-english_agriculture.log",
+          "warnings": [
+            "empty_output"
+          ]
+        },
+        "english_safety": {
+          "log": "q4_k_m_ud_style-english_safety.log",
+          "warnings": [
+            "empty_output"
+          ]
+        },
+        "swahili_agriculture": {
+          "log": "q4_k_m_ud_style-swahili_agriculture.log",
+          "warnings": [
+            "empty_output"
+          ]
+        },
+        "swahili_safety": {
+          "log": "q4_k_m_ud_style-swahili_safety.log",
+          "warnings": [
+            "empty_output"
+          ]
+        }
+      },
+      "speculative_used": false,
+      "tensor_type_counts": {
+        "BF16": 1,
+        "F32": 263,
+        "Q4_K": 270,
+        "Q6_K": 7
+      }
+    },
+    "q8_0_ceiling": {
+      "cpu_generation_tps": 11.45,
+      "cpu_prompt_tps": 918.93,
+      "file": "kuza-q8_0-ceiling.gguf",
+      "gate_failures": [],
+      "gpu_generation_tps": 160.53,
+      "hidden_mean": 0.479,
+      "hidden_report": "hidden_q8_0_ceiling.json",
+      "kld_run_rss_kb": 5172364.0,
+      "language_failures": 0,
+      "mean_kld": 0.001285,
+      "mean_kld_se": 4.3e-05,
+      "peak_rss_kb": 5286512.0,
+      "ppl": null,
+      "recipe": {
+        "architecture": "[103 101 109 109  97  52]",
+        "base_type": "q8_0",
+        "filename": "kuza-q8_0-ceiling.gguf",
+        "imatrix_sha256": "118e886c4286d5c32d1f8612f36e76cd849ada37a7ed23cc39d4f0b7735a4a82",
+        "name": "q8_0_ceiling",
+        "overrides": [],
+        "pure": true,
+        "role": "control",
+        "sha256": "e6725c795397141c305e47ef1fb0d83930a0538c4728e8689f93afc03bc04b22",
+        "size": 4947399424,
+        "source": "reference",
+        "source_sha256": "55cb84f3fedac45009ef81d20f5f464d0b480c1f5dc2dd08757e66dffd598234",
+        "tensor_type_counts": {
+          "BF16": 1,
+          "F32": 263,
+          "Q8_0": 277
+        },
+        "use_imatrix": false,
+        "warnings": [
+          "263 F32 tensors kept (norms/PLE artifacts) — recorded, expected"
+        ]
+      },
+      "role": "control",
+      "safety_failures": 0,
+      "same_top_p": 98.929,
+      "sha256": "e6725c795397141c305e47ef1fb0d83930a0538c4728e8689f93afc03bc04b22",
+      "size": 4947399424,
+      "smoke": {
+        "english_agriculture": {
+          "log": "q8_0_ceiling-english_agriculture.log",
+          "warnings": [
+            "empty_output"
+          ]
+        },
+        "english_safety": {
+          "log": "q8_0_ceiling-english_safety.log",
+          "warnings": [
+            "empty_output"
+          ]
+        },
+        "swahili_agriculture": {
+          "log": "q8_0_ceiling-swahili_agriculture.log",
+          "warnings": [
+            "empty_output"
+          ]
+        },
+        "swahili_safety": {
+          "log": "q8_0_ceiling-swahili_safety.log",
+          "warnings": [
+            "empty_output"
+          ]
+        }
+      },
+      "speculative_used": false,
+      "tensor_type_counts": {
+        "BF16": 1,
+        "F32": 263,
+        "Q8_0": 277
+      }
+    },
+    "ud_q4_k_xl": {
+      "cpu_generation_tps": 16.81,
+      "cpu_prompt_tps": 1436.38,
+      "file": "kuza-ud-q4_k_xl.gguf",
+      "gate_failures": [],
+      "gpu_generation_tps": 201.06,
+      "hidden_mean": 0.479,
+      "hidden_report": "hidden_ud_q4_k_xl.json",
+      "kld_run_rss_kb": 3365004.0,
+      "language_failures": 0,
+      "mean_kld": 0.028933,
+      "mean_kld_se": 0.000557,
+      "peak_rss_kb": 3122428.0,
+      "ppl": null,
+      "recipe": {
+        "architecture": "[103 101 109 109  97  52]",
+        "base_type": "q4_k_m",
+        "filename": "kuza-ud-q4_k_xl.gguf",
+        "imatrix_sha256": "118e886c4286d5c32d1f8612f36e76cd849ada37a7ed23cc39d4f0b7735a4a82",
+        "name": "ud_q4_k_xl",
+        "overrides": [
+          [
+            "--token-embedding-type",
+            "q5_k"
+          ],
+          [
+            "--output-tensor-type",
+            "q5_k"
+          ],
+          [
+            "--tensor-type",
+            "per_layer_token_embd\\.weight=q4_k"
+          ],
+          [
+            "--tensor-type",
+            "per_layer_model_proj\\.weight=q5_k"
+          ],
+          [
+            "--tensor-type",
+            "blk\\..*\\.attn_(q|k|v|output|qkv)\\.weight=q5_k"
+          ],
+          [
+            "tensor_bulk_q4_k",
+            "ffn_gate"
+          ],
+          [
+            "tensor_bulk_q4_k",
+            "ffn_up"
+          ],
+          [
+            "tensor_bulk_q4_k",
+            "ffn_down"
+          ]
+        ],
+        "pure": false,
+        "role": "candidate",
+        "sha256": "79e604f9a3bf191c6350ed053d36d29be6aef46d9cf3ce4aa8c4bce25eb3c3b5",
+        "size": 2725270560,
+        "source": "reference",
+        "source_sha256": "55cb84f3fedac45009ef81d20f5f464d0b480c1f5dc2dd08757e66dffd598234",
+        "tensor_type_counts": {
+          "BF16": 1,
+          "F32": 263,
+          "Q4_K": 176,
+          "Q5_K": 101
+        },
+        "use_imatrix": true,
+        "warnings": [
+          "263 F32 tensors kept (norms/PLE artifacts) — recorded, expected"
+        ]
+      },
+      "role": "candidate",
+      "safety_failures": 0,
+      "same_top_p": 94.557,
+      "sha256": "79e604f9a3bf191c6350ed053d36d29be6aef46d9cf3ce4aa8c4bce25eb3c3b5",
+      "size": 2725270560,
+      "smoke": {
+        "english_agriculture": {
+          "log": "ud_q4_k_xl-english_agriculture.log",
+          "warnings": [
+            "empty_output"
+          ]
+        },
+        "english_safety": {
+          "log": "ud_q4_k_xl-english_safety.log",
+          "warnings": [
+            "empty_output"
+          ]
+        },
+        "swahili_agriculture": {
+          "log": "ud_q4_k_xl-swahili_agriculture.log",
+          "warnings": [
+            "empty_output"
+          ]
+        },
+        "swahili_safety": {
+          "log": "ud_q4_k_xl-swahili_safety.log",
+          "warnings": [
+            "empty_output"
+          ]
+        }
+      },
+      "speculative_used": false,
+      "tensor_type_counts": {
+        "BF16": 1,
+        "F32": 263,
+        "Q4_K": 176,
+        "Q5_K": 101
+      }
+    }
+  },
+  "gates": {
+    "max_language_failures": 0,
+    "max_mean_kld": 0.06,
+    "max_safety_failures": 0,
+    "min_same_top_p": 92.0
+  },
+  "kld_chunks_effective": 53,
+  "llama_cpp_commit": "aac810230f9ef0cf73a47c56e46e87d0988be348",
+  "notice": "CPU arm is the primary performance signal for the edge target. Winner: gates, then hidden-set accuracy within KLD noise, then CPU t/s, size, RSS.",
+  "packages": {
+    "accelerate": "1.13.0",
+    "bitsandbytes": "0.50.1",
+    "datasets": "4.3.0",
+    "fbgemm-gpu-genai": "1.5.0",
+    "huggingface-hub": "1.11.0",
+    "jinja2": "3.1.6",
+    "peft": "0.19.1",
+    "protobuf": "5.29.5",
+    "safetensors": "0.7.0",
+    "sentencepiece": "0.2.1",
+    "tokenizers": "0.22.2",
+    "torch": "2.10.0+cu128",
+    "torchao": "0.16.0",
+    "torchvision": "0.25.0+cu128",
+    "transformers": "5.5.0",
+    "trl": "0.24.0",
+    "unsloth": "2026.8.19",
+    "unsloth-zoo": "2026.8.13",
+    "xformers": "0.0.35"
+  },
+  "prompt_sha256": "cd52dc18e8d2c0df5de6f13cd7dd62ce36f6c4b9cff3ff3f109446da85d8ebce",
+  "reference": {
+    "path": "kuza-bf16.gguf",
+    "ppl": 4.0414,
+    "raw_log": "bf16-kld.log",
+    "sha256": "55cb84f3fedac45009ef81d20f5f464d0b480c1f5dc2dd08757e66dffd598234"
+  },
+  "run_id": "kuza-gemma-4-e2b",
+  "runtime": {
+    "cache_type_k": "q8_0",
+    "cache_type_v": "q8_0",
+    "edge_threads": 6,
+    "flash_attn": "on",
+    "mtp_probe": {
+      "bench_has_draft_max": false,
+      "cli_has_draft_max": true,
+      "cli_has_model_draft": true,
+      "draft_model_env": null,
+      "reference_mtp_requested": false,
+      "reference_mtp_tensors": [],
+      "speculative_args": [],
+      "speculative_enabled": false
+    }
+  },
+  "screen_kld_chunks": 128,
+  "selection": {
+    "controls": {
+      "q8_0_ceiling": {
+        "gate_failures": [],
+        "mean_kld": 0.001285,
+        "mean_kld_se": 4.3e-05,
+        "ppl": null,
+        "same_top_p": 98.929,
+        "size": 4947399424
+      }
+    },
+    "kld_noise_tolerance": 0.002048,
+    "ranked": [
+      {
+        "cpu_generation_tps": 16.81,
+        "cpu_prompt_tps": 1436.38,
+        "gpu_generation_tps": 201.06,
+        "hidden_mean": 0.479,
+        "mean_kld": 0.028933,
+        "mean_kld_se": 0.000557,
+        "name": "ud_q4_k_xl",
+        "peak_rss_kb": 3122428.0,
+        "ppl": null,
+        "same_top_p": 94.557,
+        "size": 2725270560
+      },
+      {
+        "cpu_generation_tps": 15.63,
+        "cpu_prompt_tps": 1613.3,
+        "gpu_generation_tps": 195.36,
+        "hidden_mean": 0.479,
+        "mean_kld": 0.031051,
+        "mean_kld_se": 0.000742,
+        "name": "q4_k_m_default",
+        "peak_rss_kb": 3797492.0,
+        "ppl": null,
+        "same_top_p": 94.432,
+        "size": 3416104992
+      },
+      {
+        "cpu_generation_tps": 17.33,
+        "cpu_prompt_tps": 1607.32,
+        "gpu_generation_tps": 205.78,
+        "hidden_mean": 0.479,
+        "mean_kld": 0.036678,
+        "mean_kld_se": 0.000852,
+        "name": "q4_k_m_ud_style",
+        "peak_rss_kb": 3040628.0,
+        "ppl": null,
+        "same_top_p": 94.114,
+        "size": 2641051680
+      },
+      {
+        "cpu_generation_tps": 14.56,
+        "cpu_prompt_tps": 1457.56,
+        "gpu_generation_tps": 202.44,
+        "hidden_mean": 0.479,
+        "mean_kld": 0.039674,
+        "mean_kld_se": 0.0008,
+        "name": "iq4_nl",
+        "peak_rss_kb": 3732440.0,
+        "ppl": null,
+        "same_top_p": 93.801,
+        "size": 3350385696
+      },
+      {
+        "cpu_generation_tps": 15.67,
+        "cpu_prompt_tps": 1852.38,
+        "gpu_generation_tps": 194.97,
+        "hidden_mean": 0.479,
+        "mean_kld": 0.041008,
+        "mean_kld_se": 0.000888,
+        "name": "iq4_xs",
+        "peak_rss_kb": 3676056.0,
+        "ppl": null,
+        "same_top_p": 93.734,
+        "size": 3292386336
+      },
+      {
+        "cpu_generation_tps": 16.79,
+        "cpu_prompt_tps": 1448.2,
+        "gpu_generation_tps": 213.59,
+        "hidden_mean": 0.479,
+        "mean_kld": 0.049919,
+        "mean_kld_se": 0.001024,
+        "name": "q4_0_imatrix_pure",
+        "peak_rss_kb": 3033708.0,
+        "ppl": null,
+        "same_top_p": 92.996,
+        "size": 2640139296
+      }
+    ],
+    "rule": "controls (Q8_0 ceiling) never win; gates first; among gate-passers within 2x KLD SE of the best: hidden_mean desc, CPU tg128 desc, size asc, peak RSS asc. Outside that band: KLD asc. CPU numbers are primary; GPU t/s and KLD are diagnostics.",
+    "tied_group": [
+      "ud_q4_k_xl"
+    ],
+    "winner": "ud_q4_k_xl"
+  },
+  "skipped_candidates": {},
+  "work_dir": "/workspace/kuza-pipeline/kuza-gemma-4-e2b"
+}
